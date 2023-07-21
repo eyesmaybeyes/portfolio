@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header className="header">
-            <Link to={`/`} className="header__link">
+            <Link to={`/`} className="header__link" href="/">
                 <img className="header__logo" src={neko} alt="logo" />
             </Link>
             <ul className="nav nav-list">

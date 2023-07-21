@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.scss';
 import './components/Header/Header.scss';
 import './components/Article/Article.scss';
@@ -11,16 +12,18 @@ import { Paginator } from './components/Paginator/Paginator';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
-  let navItems = document.querySelectorAll('.nav-list__link');
+  useEffect(() => {
+    let navItems = document.querySelectorAll('.nav-list__link');
 
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      navItems.forEach(item => {
-        item.classList.remove('active');
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navItems.forEach(item => {
+          item.classList.remove('active');
+        });
+        item.classList.add('active');
       });
-      item.classList.add('active');
     });
-  });
+  }, []);
 
   return (
     <div className="wrap">
@@ -87,7 +90,7 @@ function App() {
               date="15.07.2023"
               text="Mari | Frontend developer | I’m interested
               in collaboration with JavaScript/React"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat doloremque illo perspiciatis."
+              desc="Lorem ipsum."
               isAboutPage={true}
             />} />
           </Routes>
