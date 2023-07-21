@@ -11,7 +11,7 @@ import { Paginator } from './components/Paginator/Paginator';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
-  const navItems = document.querySelectorAll('.nav-list__link');
+  let navItems = document.querySelectorAll('.nav-list__link');
 
   navItems.forEach(item => {
     item.addEventListener('click', () => {
