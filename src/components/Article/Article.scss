@@ -1,0 +1,45 @@
+.post-link:hover {
+    border-bottom: 2px solid #42b983;
+}
+
+.post-list {
+    margin: 2em 0;
+}
+
+.post-list__item {
+    padding: 1em 0 2em;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-list .post-list__item:last-child {
+    border-bottom: 0px;
+}
+
+.post-info {
+    color: #7f8c8d;
+    margin: 1.2em 0;
+}
+
+.read-more,
+.post-desc__git {
+    display: inline-block;
+    cursor: pointer;
+    color: #42b983;
+}
+
+.post-text {
+    margin: 0 0 1.2em;
+}
+
+.post-desc {
+    margin: 1.2em 0;
+}
+
+.post-desc p,
+.post-desc a {
+    padding: 0.3em 0;
+}
+
+.post-desc p>span {
+    font-weight: 600;
+}
