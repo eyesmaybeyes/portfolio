@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header className="header">
-            <a className="header__link" href="./index.html">
+            <Link to={`/`} className="header__link">
                 <img className="header__logo" src={neko} alt="logo" />
-            </a>
+            </Link>
             <ul className="nav nav-list">
                 <li className="nav-list__item">
                     <Link to={`/`} className="nav-list__link active">
