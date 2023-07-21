@@ -56,6 +56,17 @@ function App() {
               git="https://github.com/yourname/yourproject"
             />} />
           </Routes>
+          <Routes>
+            <Route path="/about" element={<Article
+              title="About Me"
+              date="15.07.2023"
+              text="Mari | Frontend developer | I’m interested
+              in collaboration with JavaScript/React"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat doloremque illo perspiciatis."
+              link="https://t.me/Cutiefrutti"
+              git="https://github.com/yourname/yourproject"
+            />} />
+          </Routes>
         </ul>
       </section>
       <Routes>
